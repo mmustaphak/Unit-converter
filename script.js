@@ -10,9 +10,9 @@ countBtn.addEventListener("click", function(){
     const baseNumVolume = baseNum*0.26
     const baseNumMass = Math.ceil(baseNum*2.20)
 
-    lengthEl.textContent = `${baseNum} meters = ${baseNumLength} feet`
-    massEl.textContent = `${baseNum} kilogram = ${baseNumMass} pounds`
-    volumeEl.textContent = `${baseNum} liters ${baseNumVolume} gallons`
+    lengthEl.textContent = `${baseNum} meters = ${baseNumLength.tofixed(2)} feet`
+    massEl.textContent = `${baseNum} kilogram = ${baseNumMass.tofixed(2)} pounds`
+    volumeEl.textContent = `${baseNum} liters ${baseNumVolume.tofixed(2)} gallons`
 })
 
 
